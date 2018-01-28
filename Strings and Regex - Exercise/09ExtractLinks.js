@@ -1,7 +1,7 @@
 function extractLinks(input) {
 
-    let regex = /www\.[A-Za-z0-9\-]+(\.[a-z]+)+/g; ///www\.[A-Za-z0-9\-]+\.[a-z]+(?:\.[a-z]+)*/g;
-    let match;
+    let regex = /www\.[A-Za-z0-9\-]+(\.[a-z]+)+/g; 
+  let match;
     let result = [];
     for (let item of input) {
         while (match = regex.exec(item)) {

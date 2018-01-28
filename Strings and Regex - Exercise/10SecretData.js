@@ -1,6 +1,6 @@
 function replaceSecretData(input) {
     let regex=/\*[A-Z][a-zA-Z]*(?= |\t|$)|\+[0-9\-]{10}(?= |\t|$)|![A-Za-z0-9]+(?= |\t|$)|_[A-Za-z0-9]+(?= |\t|$)/g;
-             //(\*[A-Z][a-zA-Z]*)(?= |\t|$)|(\+[0-9-]{10})(?= |\t|$)|(![0-9a-zA-Z]+)(?= |\t|$)|(_[0-9a-zA-Z]+)(?= |\t|$)
+             
 
     let result=input.forEach(l => console.log(l.replace
     (regex, (m) => '|'.repeat(m.length))));
